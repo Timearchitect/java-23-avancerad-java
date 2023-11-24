@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
     static final int groupAmount = 10;
-
+    //Det här är en kommentar pls dont delete
     public static void main(String[] args) {
         ArrayList<String> nameArray = new ArrayList<>();
         try {
