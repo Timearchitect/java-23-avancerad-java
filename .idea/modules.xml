@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/groupRandomizer/groupRandomizer.iml" filepath="$PROJECT_DIR$/groupRandomizer/groupRandomizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-23-avancerad-java.iml" filepath="$PROJECT_DIR$/.idea/java-23-avancerad-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tickTacToeShell/tickTacToeShell.iml" filepath="$PROJECT_DIR$/tickTacToeShell/tickTacToeShell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wordle/wordle.iml" filepath="$PROJECT_DIR$/wordle/wordle.iml" />
+    </modules>
+  </component>
+</project>
