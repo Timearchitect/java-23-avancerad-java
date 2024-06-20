@@ -14,7 +14,7 @@ public class WordleJFrame extends JFrame {
     // skapa classer för sam-atbete
     // mer ord randomisa det
     //features : läs från file ,lägg till fler game modes
-    private final String[] wordArray = {"TEST","ROAD","POLE","DOWN","QUIT","BLUE","COOL","BEER","DART","JAVA","PLAY","GAME","WORD","TYPE","DONE","HARD","EASY"};
+    private final String[] wordArray = {"TEST","READ","ROAD","POLE","DOWN","QUIT","BLUE","COOL","BEER","DART","JAVA","PLAY","GAME","WORD","TYPE","DONE","HARD","EASY"};
     private final String dailyWord = wordArray[new Random().nextInt(0,wordArray.length)];
     private ArrayList<JTextField> jfArray = new ArrayList<>();
 
@@ -55,7 +55,7 @@ public class WordleJFrame extends JFrame {
                                     KeyboardFocusManager.getCurrentKeyboardFocusManager().focusNextComponent();
                                     e.consume();
                                 }
-                            }else if(e.getKeyCode() == 16)
+                            }else if(e.getKeyCode() == 16 || e.getKeyCode() == 20) //20 = capslock
                                 e.consume();
                                 else
                             jt.setText("");
@@ -64,7 +64,7 @@ public class WordleJFrame extends JFrame {
 
                         public void keyReleased(KeyEvent e) {
                             System.out.println(e.getKeyCode());
-                            if (!(e.getKeyCode() == 37 || e.getKeyCode() == 39|| e.getKeyCode() == 16)) { //16 = shift
+                            if (!(e.getKeyCode() == 37 || e.getKeyCode() == 39|| e.getKeyCode() == 16|| e.getKeyCode() == 20)) { //16 = shift
                                 char c = e.getKeyChar();
                                 if ('A' <= c && c <= 'z') // a-Z
                                     jt.setText(String.valueOf(c).toUpperCase());
